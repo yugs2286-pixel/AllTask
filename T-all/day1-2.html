@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day1-2.css">
+</head>
+<body>
+    <form id="main"  >
+    <div class="container">
+        <div class="start">
+          
+          <div class="head"><h2>Create Account</h2></div>
+          <div class="starting">
+            <pre><label for=""><span class="color">First name*</span></label>                  <label for=""><span class="color">second name</span></label></pre>
+            <div class="name">
+                <input  type="text" placeholder="Enter your name" id="Name" required>
+                <input type="text" placeholder="Enter your second name" id="Name2" required>
+            </div>
+            <br>
+            <div class="mail color"><label for="">Email* </label></div>
+            <input type="email" placeholder="enter your email" name="email" id="mail">
+            <br>
+             <pre><label for=""><span class="color">password*</span></label>                    <label for=""><span class="color">confirm password*</span></label></pre>
+         <div class="pass">
+                <input type="password" placeholder="Enter your password" id="pass" required>
+                <input type="password" placeholder=" confrim password"  id="con" required>
+         </div>
+            <pre><label for=""><span class="color">Gender</span></label>                      <label for=""><span class="color">Hobbiess</span></label></pre>
+        <div class="both"> <div class="gen">
+                <input type="radio" name="gender" id="gender"><p><span class="color">male</span></p>
+                <input type="radio" name="gender" id="gender"><p><span class="color">female</span></p></div>
+ 
+
+
+         <div class="ge"> <input type="radio"  id="hobby" ><p><span class="color">movie</span></p>
+                <input type="radio"  id="hobby"><p><span class="color">sport</span></p>
+                <input type="radio"  id="hobby"><p><span class="color">music</span></p>
+                <input type="radio"  id="hobby"><p><span class="color">travel</span></p></pre>
+         </div>
+         </div>
+         <div class="hfive">
+                 <pre><label for=""><span class="color">Source of income </span></label>        <label for=""><span class="color">Income</span></label></pre>
+         </div>
+        <div class="five2">
+            <select name="source of income" >
+                <option></option>
+                <option class="color">employed</option>
+                <option class="color">others</option>
+            </select>
+        </div>
+           <div class="range"> <input id="pi_input" type="range" min="5" max="50" step=".5" >
+<p id="val">Value: <output id="value"></output>k</p></div>
+            <div class="img"> <pre><label for=""><i class="color">Uplod image</i></label>                 <label for=""><i class="color">Age</i></label></pre>
+            </div>
+                <div class="file"><input type="file" name="file"></div>
+            <div class="age"><input type="number" name="age" id="age" min="18" max="50" ></div>
+
+            <label for="bio" class="color">bio </label>
+            <div class="bio">
+             <textarea name="bio" placeholder="enter your bio" rows="5" class="text" ></textarea>
+            </div>
+
+            
+        </div>       
+        <div class="head2">
+        <button id="create" type="submit" >Create!</button>
+    </div>        
+    </div> 
+    </div>   
+    </div>    
+    </form>
+</body>
+<script src="day1-2.js"></script>
+</html>

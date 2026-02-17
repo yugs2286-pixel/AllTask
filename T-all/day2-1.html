@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             display: flex; 
+             justify-content: center; 
+             align-items: center; 
+            
+        }
+       .container{
+        align-items: center;
+        
+       }
+        .place{
+            margin-left: 10px;
+            width: 40%;
+        }
+        .font{
+            font-size: 1rem;
+            /* margin-top: -10px; */
+        }
+        /* .border{
+            width: 40%;
+        } */
+      .main{
+        /* align-content: center; */
+        margin-left: 75%;
+        margin-top: 40px;
+      }
+      .wid{
+        width: 300px;
+        height: 29px;
+      }
+      #wid{
+        width: 300px;
+        height: 39px;
+        color: white;
+        background-color: rgb(52, 52, 184);
+      }
+      .bor{
+       border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  /* border-bottom-left-radius: 5px; */
+  /* border: 2px solid #73AD21; */
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(70, 70, 240);
+  /* display: inline-flex; */
+      }
+       @media screen and (min-width: 768px) {
+            .container {
+                max-width: 500px;
+                padding: 50px;
+               
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+
+            input {
+                padding: 12px; /* Slightly larger input fields on desktop */
+            }
+        }
+    </style>
+    
+</head>
+<body style="width: 50%; height: 100%;">
+    <fieldset class="main" style="background-color: rgb(236, 239, 248);">
+        <form name="myform"  onsubmit=" data()" action="/day2sum.html">
+        <div class="container">
+            
+            <div class="font"><h2><b class="bor">1</b> Candidate Info</h2></div>
+            <div class="place">
+            <input class="wid" type="text" placeholder="yourname*" data-name="username" required>
+                <br>
+                <br>
+                <input class="wid" type="email" placeholder="Your Email*" required>
+                <br>
+                <br>
+                <textarea class="wid" name="about self" placeholder="About your self*" required ></textarea></div>
+                <div class="font"><h2>Intrests:</h2></div>
+                <select  class="wid" name="Dropdown " >
+                    <option></option>
+                    <option>sport</option>
+                    <option>fishing</option>
+                    <option>ect</option>
+                </select>
+                
+            <div  class="font"><h2> <b class="bor">2</b> Additional Info</h2></div>
+              <textarea  class="wid" name="about school" placeholder="About your school*" required></textarea>
+              <br>
+              <br>
+              <input color="white" id="wid" type="submit" value="submit your data" name="name" onclick="check()" >
+              
+            <br>            
+        </div>
+    </form>
+    </fieldset>
+    <!-- <script src="script.js"></script>  -->
+</body>
+</html>
+<!-- https://github.com/yugs2286-pixel/AllTask.git --> 

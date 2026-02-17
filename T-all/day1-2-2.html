@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    width: 400px;
+    height: 250px;
+    border-collapse: collapse;
+  }
+
+  td {
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .left-col { width: 20%; }
+  .mid-col  { width: 30%; }
+  .right-col { width: 50%; }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td class="left-col"></td>
+    <td class="mid-col"></td>
+    <td rowspan="2" class="right-col"></td> </tr>
+  
+  <tr>
+    <td colspan="2" rowspan="2"></td> </tr>
+
+  <tr>
+    <td></td> </tr>
+</table>
+
+</body>
+</html>

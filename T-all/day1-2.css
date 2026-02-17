@@ -1,0 +1,98 @@
+body {
+    /* margin: 20px; */
+    background-color: #f4f4f4;
+    color: #000000;
+     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    /* text-align: center;
+    color: #1a1c1f;
+    margin-bottom: 20px;
+    background-color: #d1d1d1; */
+    text-align: center;
+    color: #1a1c1f;
+    margin-bottom: 20px;
+    background-color: #d1d1d1;
+    border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     height: 33px;
+     margin: 0;
+}
+.head2{
+    background-color: #cfccc8;
+    border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+     height: 33px;
+     place-content: center;
+        text-align: center;
+}
+.start{
+    background-color:rgb(255, 255, 255);
+    /* width: 30vw;
+    height: 75vh; */
+    border-radius: 1rem;
+    /* font-size: 15px; */
+     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 485px;
+    max-height: fit-content;
+    margin: 0 auto;
+    background-color:#636c83;
+    padding: 20px;
+    /* border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.inner2{
+    /* display: grid; */
+    row-gap: 50%;
+   
+}
+.both{
+    display: flex;
+    margin-top: -19px;
+}
+ .gen{
+        
+        display: flex;
+        align-items: center
+ }
+ .ge{
+        margin-left: 70px;
+        display: inline-flex;
+        
+          }
+.range{
+       margin-left: 180px;
+    margin-top: -2vmax;
+    display: flex;
+}
+.age{
+       margin-left: 220px;
+        margin-top: -1vmax;
+        /* margin-left: 17vmin; */
+    }
+#Name2{
+   margin-left: 40px;
+}    
+.starting{
+    padding-left: 8px;
+    
+}
+.text{
+    width: 75%;
+}
+#mail{
+    width: 75%;
+}
+button{
+    margin-left: 400px;
+    
+    background-color: #5fff8f;
+}
+#con{
+    margin-left: 40px;
+}

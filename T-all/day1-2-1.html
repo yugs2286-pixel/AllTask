@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    width: 300px;
+    height: 250px;
+    border-collapse: collapse;
+    margin: 20px;
+  }
+
+  td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+  }
+  .short-row { height: 30px; }
+  .tall-row { height: 100px; }
+</style>
+</head>
+<body>
+
+<table>
+  <tr class="short-row">
+    <td colspan="3"></td>
+  </tr>
+  
+  <tr class="tall-row">
+    <td colspan="3"></td>
+  </tr>
+  
+  <tr class="tall-row">
+    <td colspan="3"></td>
+  </tr>
+
+  <tr class="short-row">
+    <td colspan="3"></td>
+  </tr>
+</table>
+<!-- final FirebaseDatabase database = FirebaseDatabase.getInstance();
+DatabaseReference ref = database.getReference("server/saving-data/fireblog"); -->
+</body>
+</html>

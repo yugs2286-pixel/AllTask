@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            background-color: white;
+            border: 2px solid rgb(223, 209, 209);
+            height: 400px;
+            padding: 10px;
+            width: 320px;
+            font-size: 2.1rem;
+            place-content: center;
+            margin-top: 10%;
+            
+        }
+      .name{
+        display: inline-flex;  
+      }
+      .gender{
+        display: inline-flex;
+        
+      }  
+    </style>
+</head>
+<body style="display: flex; justify-content: center;">
+    <div class="content">
+        <form onclick="submit" action="day2sum.html">
+            
+        <div class="name"><label for="Username:">Username:</label>
+            <input type="text"  name="name" id="1" required> 
+        </div>
+        <br>
+        <br>
+
+        <div class="name"><label for="password">password:</label>  
+       <input type="password"  name="name" id="2" required> 
+        </div>
+        <br>
+        <div class="gender" >
+            <p>Gender:</p>
+             <input type="radio" value="male" id="3" name="gender" ><p>male </p>      
+             <input type="radio" value="female" id="4" name="gender"  ><p>female</p>  
+        </div>
+        <br>
+        <div class="list">
+            <label for="drop">Dropdrop:</label>
+            <select   name="Dropdown" placeholder="select" id="list" required>
+                <option></option>
+                <option>qq</option>
+                <option>rr</option>
+                <option>yy</option>
+                <option>uu</option> 
+            </select>
+            <br>
+            <br>
+            <input id="sub" type="submit" value="submit" required>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
