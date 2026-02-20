@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <P id="first"></P>
+    <button onclick="containsEe()">Check if string contains 'ee'</button>
+</body>
+<script>
+    function containsEe(inputString) {
+  var inputString = document.getElementById("inputString").value;
+  var result = inputString.includes("ee");
+  document.getElementById("first").innerHTML = result;
+} 
+
+</script>
+</html>

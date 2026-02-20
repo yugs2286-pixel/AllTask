@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inputString" placeholder="Enter a number">
+    <P id="first"></P>
+    <button onclick="appendSomething()">Count digits</button>
+</body>
+<script>
+   
+    function appendSomething() {
+        
+    let num = parseInt(document.getElementById("inputString").value);
+    const factors = [];
+
+    for (let i = 1; i <= num; i++) {
+
+        if (num % i === 0) {
+            factors.push(i);
+        }
+    }
+    result = factors;
+    document.getElementById("first").innerHTML = result.join(", ");
+}
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inputString" placeholder="Enter a number">
+    <P id="first"></P>
+    <button onclick="Table()">Show Table</button>
+</body>
+<script>
+    function Table() {
+    let num = parseInt(document.getElementById("inputString").value);
+    let result = "";
+    for (let i = 1; i <= 10; i++) {
+        result += `${num} x ${i} = ${num * i}<br>`;
+    }
+    document.getElementById("first").innerHTML = result;
+}
+</script>
+</html>

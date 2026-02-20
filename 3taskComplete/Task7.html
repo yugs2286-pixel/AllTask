@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <P id="first"></P>
+    <button onclick="removeLeadingZeros()">Remove Leading Zeros</button>
+</body>
+<script>
+    function removeLeadingZeros() {
+    let input = document.getElementById("inputString").value;
+    input = input.replace(/^0+/, '');
+    let result = Number(input);
+    document.getElementById("first").innerHTML = result;
+}
+</script>
+</html>

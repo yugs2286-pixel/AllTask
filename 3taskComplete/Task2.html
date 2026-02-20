@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inputString" placeholder="Enter a number">
+    <P id="first"></P>
+    <button onclick="appendSomething()">Count digits</button>
+</body>
+<script>
+function appendSomething() { 
+    var inputString = document.getElementById("inputString").value;
+    inputString = inputString.toString();
+   var result= inputString.length;
+    
+    document.getElementById("first").textContent = result;
+ }
+
+</script>
+</html>

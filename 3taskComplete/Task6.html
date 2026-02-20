@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inputString" placeholder="Enter a number">
+    <p id="first"></p>
+    <button onclick="customRightShift(parseInt(document.getElementById('inputString').value), 3)">Right Shift by 3</button>
+</body>
+<script>
+    function customRightShift() {
+    const num = arguments[0];
+    const shiftAmount = arguments[1];
+  const divisor = Math.pow(2, shiftAmount);
+   const result = Math.floor(num / divisor);
+  document.getElementById("first").innerHTML = `${num} >> ${shiftAmount} = ${result}`;
+}
+</script>
+</html>

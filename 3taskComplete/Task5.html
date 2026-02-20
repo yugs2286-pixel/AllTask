@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inputString" placeholder="Enter a two-digit number">
+    <p id="first"></P>
+    <button onclick="largestSwap()">Check Largest Swap</button>
+</body>
+<script>
+    function largestSwap() {
+    let num = parseInt(document.getElementById("inputString").value);
+    let str = num.toString();
+    let swapped = str[1] + str[0];
+    let result = num > Number(swapped);
+    document.getElementById("first").innerHTML = "Is " + num + " larger than its swapped version " + swapped + "? " + result;
+}
+</script>
+</html>

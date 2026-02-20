@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <P id="first"></P>
+    <button onclick="asciiTransform()">ASCII Transform</button>
+</body>
+<script>
+    function asciiTransform(str) {
+    return str.split("").map(ch => 
+        ch.charCodeAt(0) % 2 === 0 ? ch.toUpperCase() : ch.toLowerCase()
+    ).join("");
+}
+
+document.getElementById("inputString").addEventListener("change", function() {
+    document.getElementById("first").innerHTML = asciiTransform(this.value);
+});
+</script>
+</html>

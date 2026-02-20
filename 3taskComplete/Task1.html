@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <P id="output"></P>
+    <button onclick="appendSomethingConcat()">Append 'something'</button>
+</body>
+<script>
+    function appendSomethingConcat() {
+     var originalString  = document.getElementById("inputString").value.toUpperCase(); 
+       
+  var result = originalString.concat(" WElCOME TO THE WORLD");
+  document.getElementById("output").textContent = result;
+}
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="number" id="inputString" placeholder="Enter a number"> -->
+    <P id="first"></P>
+    <!-- <button onclick="addAndMultiply()">Add & Multiply</button> -->
+</body>
+<script>
+    function multiplydigits() {
+    let num = arguments[0];
+    while (num >= 10) {
+        num = num.toString().split("").reduce((a,b) => a * b);
+    }
+    return num;
+}
+function addAndMultiply() {
+    let nums = arguments[0];
+    let sum = nums.reduce((a,b) => a + b);
+    return multiplydigits(sum);
+}
+document.getElementById("first").innerHTML = "Add & Multiply (16, 28) = " + addAndMultiply([16,28]);
+
+</script>
+</html>
